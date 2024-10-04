@@ -1,3 +1,3 @@
-# Learning UXN
+# Learning uxn
 
-Going through the [UXN tutorial](https://compudanzas.net/uxn_tutorial.html).
+Going through the [Compudanzas uxn tutorial](https://compudanzas.net/uxn_tutorial.html).
