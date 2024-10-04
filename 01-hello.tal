@@ -3,10 +3,16 @@
 ( devices )
 |10 @Console &vector $2 &read $1 &pad $5 &write $1 &error $1
 
+( macros )
+( print a character to stdout )
+%EMIT { .Console/write DEO } ( character -- )
+( print a newline )
+%NL { #0a EMIT } ( -- )
+
 ( main program )
-|0100 LIT "h .Console/write DEO ( h )
-      LIT "e .Console/write DEO ( e )
-      LIT "l .Console/write DEO ( l )
-      LIT "l .Console/write DEO ( l )
-      LIT "o .Console/write DEO ( o )
-         #0a .Console/write DEO ( newline )
+|0100 LIT "h EMIT ( h )
+      LIT "e EMIT ( e )
+      LIT "l EMIT ( l )
+      LIT "l EMIT ( l )
+      LIT "o EMIT ( o )
+      NL ( newline )
