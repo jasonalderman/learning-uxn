@@ -1,7 +1,12 @@
 ( hello.tal )
-|0100 LIT "h #18 DEO ( h )
-      #6518 DEO ( e )
-      #6c18 DEO ( l )
-      #6c18 DEO ( l )
-      #6f18 DEO ( o )
-      #0a18 DEO ( newline )
+
+( devices )
+|10 @Console &vector $2 &read $1 &pad $5 &write $1 &error $1
+
+( main program )
+|0100 LIT "h .Console/write DEO ( h )
+      LIT "e .Console/write DEO ( e )
+      LIT "l .Console/write DEO ( l )
+      LIT "l .Console/write DEO ( l )
+      LIT "o .Console/write DEO ( o )
+         #0a .Console/write DEO ( newline )
