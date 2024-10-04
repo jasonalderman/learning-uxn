@@ -1,5 +1,5 @@
 ( hello.tal )
-|0100 #6818 DEO ( h )
+|0100 LIT "h #18 DEO ( h )
       #6518 DEO ( e )
       #6c18 DEO ( l )
       #6c18 DEO ( l )
